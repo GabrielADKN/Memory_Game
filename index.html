@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Memory Game</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div id="welcomeScreen">
+        <h1>Welcome to the Memory Game of Gabriel</h1>
+        <p>Match pairs of cards to win!</p>
+        <button id="startButton">Start Game</button>
+    </div>
+    
+    <section class="memory-game">
+        <div class="memory-card" data-card="animation">
+            <img class="front-card" src="img/animation.svg" alt="animation">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="animation">
+            <img class="front-card" src="img/animation.svg" alt="animation">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="avatar">
+            <img class="front-card" src="img/avatar.svg" alt="avatar">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="avatar">
+            <img class="front-card" src="img/avatar.svg" alt="avatar">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="data">
+            <img class="front-card" src="img/data.svg" alt="data">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="data">
+            <img class="front-card" src="img/data.svg" alt="data">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="helix">
+            <img class="front-card" src="img/helix.svg" alt="helix">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="helix">
+            <img class="front-card" src="img/helix.svg" alt="helix">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="honor">
+            <img class="front-card" src="img/honor.svg" alt="honor">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="honor">
+            <img class="front-card" src="img/honor.svg" alt="honor">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="light">
+            <img class="front-card" src="img/light.svg" alt="light">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="light">
+            <img class="front-card" src="img/light.svg" alt="light">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="molecular">
+            <img class="front-card" src="img/molecular.svg" alt="molecular">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="molecular">
+            <img class="front-card" src="img/molecular.svg" alt="molecular">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="openscad">
+            <img class="front-card" src="img/openscad.svg" alt="openscad">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="openscad">
+            <img class="front-card" src="img/openscad.svg" alt="openscad">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="organism">
+            <img class="front-card" src="img/organism.svg" alt="organism">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="organism">
+            <img class="front-card" src="img/organism.svg" alt="organism">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="peach">
+            <img class="front-card" src="img/peach.svg" alt="peach">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+        <div class="memory-card" data-card="peach">
+            <img class="front-card" src="img/peach.svg" alt="peach">
+            <img class="back-face" src="img/back.svg" alt="back">
+        </div>
+    </section>
+    <button id="restartButton">Restart Game</button>
+    <section id="scoreScreen" style="display: none;">
+        <h2>Score</h2>
+        <p id="score">0</p>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  background-color: antiquewhite;
+}
+
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: 2px;
+  display: flex;
+  flex-wrap: wrap;
+  perspective: 1000px;
+}
+
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
+  margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform 0.2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-card,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  background: rgb(240, 215, 184);
+  border: 2px solid deeppink;
+  backface-visibility: hidden;
+}
+
+.front-card {
+  transform: rotateY(180deg);
+}
+
+img {
+  width: 100px;
+}
+
+.memory-card.matched {
+  animation: matchedAnimation 0.5s ease-in-out;
+}
+
+@keyframes matchedAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#restartButton {
+  background-color: #4caf50; /* Green background color */
+  border: none; /* Remove border */
+  color: white; /* White text color */
+  padding: 15px 32px; /* Add padding */
+  text-align: center; /* Center text */
+  text-decoration: none;
+  display: none;
+  font-size: 16px; /* Set font size */
+  margin: 4px 2px; /* Add some margin */
+  cursor: pointer; /* Add cursor pointer on hover */
+  border-radius: 10px; /* Rounded corners */
+
+  position: fixed;
+  bottom: 20px; /* Adjust this value to set the distance from the bottom */
+  left: 50%;
+  transform: translateX(-50%);
+
+  margin-top: 20px; /* Adjust the margin as needed to position the button */
+  padding: 10px 20px; /* Adjust the padding for the button */
+  font-size: 16px; /* Adjust the font size for the button text */
+}
+
+#restartButton:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.memory-game {
+  width: 80%; /* Adjust the width as per your preference */
+  max-width: 800px; /* Set a maximum width to prevent the cards from becoming too large */
+  margin: 0 auto; /* Center the element horizontally */
+  /* display: flex; */
+  flex-wrap: wrap; /* Allow cards to wrap to the next row */
+  justify-content: space-between; /* Distribute space evenly between cards */
+  display: none;
+  
+}
+
+.memory-card {
+  width: calc(25% - 10px); /* Adjust the width of each card */
+  height: calc(33.333% - 10px); /* Adjust the height of each card */
+}
+
+#welcomeScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  #welcomeScreen h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333; /* Change the color to your preference */
+  }
+  
+  #welcomeScreen p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #555; /* Change the color to your preference */
+  }
+  
+  #startButton {
+    background-color: #4caf50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  #startButton:hover {
+    background-color: #45a049;
+  }
