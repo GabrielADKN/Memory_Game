@@ -101,9 +101,9 @@ img {
 }
 
 .memory-game {
-  width: 80%; /* Adjust the width as per your preference */
-  max-width: 800px; /* Set a maximum width to prevent the cards from becoming too large */
-  margin: 0 auto; /* Center the element horizontally */
+  width: 80%; 
+  max-width: 800px; 
+  margin: 0 auto; /* Center the game */
   /* display: flex; */
   flex-wrap: wrap; /* Allow cards to wrap to the next row */
   justify-content: space-between; /* Distribute space evenly between cards */
