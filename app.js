@@ -61,8 +61,8 @@ function unFlipCards() {
 }
 
 function resetBoard() {
-  [hasFlippedCard, lockBoard] = [false, false];
-  [firstCard, secondCard] = [null, null];
+  hasFlippedCard, lockBoard = false, false;
+  firstCard, secondCard = null, null;
 }
 
 let matchedPairs = 0;
